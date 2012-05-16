@@ -1,0 +1,5 @@
+category: KDE
+requires: kactivities libgcc1 libkdecore5 libQtCore4 libQtDBus4 libstdc++6
+external-source: kactivities
+sdesc: "KDE activity manager client library (runtime)"
+ldesc: "KDE activity manager"
