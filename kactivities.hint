@@ -1,4 +1,0 @@
-category: KDE
-requires: libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libsoprano4 libstdc++6
-sdesc: "KDE activity manager daemon"
-ldesc: "KDE activity manager"

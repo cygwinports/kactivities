@@ -1,7 +1,0 @@
-inherit kde4
-
-
-PKG_NAMES="${PN} lib${PN}6 lib${PN}-devel"
-kactivities_CONTENTS="usr/bin/kactivitymanagerd.exe usr/lib/kde4/ usr/share/"
-libkactivities6_CONTENTS="usr/bin/cygkactivities-6.dll"
-libkactivities_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/lib* usr/lib/pkgconfig/"

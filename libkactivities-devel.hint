@@ -1,5 +1,0 @@
-category: KDE
-requires: libkactivities6 libkdecore-devel libQtCore4-devel libQtDBus4-devel
-external-source: kactivities
-sdesc: "KDE activity manager client library (development)"
-ldesc: "KDE activity manager"

@@ -1,0 +1,11 @@
+--- origsrc/kactivities-4.10.5/src/lib/models/CMakeLists.txt	2013-06-28 12:03:58.775219100 -0500
++++ src/kactivities-4.10.5/src/lib/models/CMakeLists.txt	2013-08-26 14:35:34.549652700 -0500
+@@ -112,7 +112,7 @@ kde4_add_library (
+     )
+ 
+ kde4_add_library (
+-    kactivities-models-component-plugin SHARED
++    kactivities-models-component-plugin MODULE
+     ${kactivities-models-component_LIB_SRCS}
+     )
+ 
