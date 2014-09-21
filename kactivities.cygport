@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kactivities"
-VERSION=4.12.5
+VERSION=4.13.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE activity manager daemon"
@@ -14,8 +14,8 @@ kactivities_CONTENTS="--exclude=imports usr/bin/kactivitymanagerd.exe usr/lib/kd
 libkactivities6_CATEGORY="Libs"
 libkactivities6_SUMMARY="KDE activity manager client library"
 libkactivities6_REQUIRES="kactivities"
-libkactivities6_CONTENTS="usr/bin/cygkactivities-6.dll usr/bin/cygkactivities-models-1.dll usr/lib/kde4/imports/"
+libkactivities6_CONTENTS="usr/bin/cygkactivities-6.dll"
 libkactivities_devel_CATEGORY="Libs"
 libkactivities_devel_SUMMARY="KDE activity manager client library"
-libkactivities_devel_REQUIRES="libkdecore-devel libnepomukcore-devel"
+libkactivities_devel_REQUIRES="libkdecore-devel"
 libkactivities_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/lib* usr/lib/pkgconfig/"
