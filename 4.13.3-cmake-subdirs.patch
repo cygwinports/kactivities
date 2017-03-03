@@ -1,0 +1,20 @@
+--- origsrc/kactivities-4.13.3/src/CMakeLists.txt	2014-06-29 02:30:23.000000000 -0500
++++ src/kactivities-4.13.3/src/CMakeLists.txt	2016-11-14 22:38:45.574970700 -0600
+@@ -89,13 +89,14 @@ if (NOT KACTIVITIES_LIBRARY_ONLY)
+ 							)
+ 			endif ()
+ 
+-			add_subdirectory (service)
+-
+-			# No point in having workspace addons without the service
++			# provided by KDE 5 kactivitymanagerd
++			#add_subdirectory (service)
+ 			add_subdirectory (workspace)
+ 
+ 	endif ()
+ endif()
+ 
++if(HAVE_NEPOMUK)
+ add_subdirectory (ontologies)
++endif()
+ 

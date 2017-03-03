@@ -2,24 +2,21 @@ inherit kde4
 
 NAME="kactivities"
 VERSION=4.13.3
-RELEASE=2
-CATEGORY="KDE"
-SUMMARY="KDE activity manager daemon"
-DESCRIPTION="KDE activity manager components"
+RELEASE=3
+CATEGORY="Libs"
+SUMMARY="KDE 4 activity manager client library"
+DESCRIPTION="KDE 4 activity manager components"
 
-PATCH_URI="4.10.5-cmake-module.patch"
+PATCH_URI="
+	4.10.5-cmake-module.patch
+	4.13.3-cmake-subdirs.patch
+"
 
 PKG_NAMES="${NAME} lib${NAME}6 lib${NAME}-devel"
-kactivities_CONTENTS="
-	usr/bin/kactivitymanagerd.exe
-	usr/lib/kde4/activitymanager_plugin_*
-	usr/share/kde4/services/activitymanager-plugin-*
-	usr/share/kde4/services/kactivitymanagerd.desktop
-	usr/share/kde4/servicetypes/activitymanager-plugin.desktop
-"
-libkactivities6_CATEGORY="Libs"
-libkactivities6_SUMMARY="KDE 4 activity manager client library"
-libkactivities6_REQUIRES="kactivities"
+kactivities_CATEGORY="_obsolete"
+kactivities_REQUIRES="kactivitymanagerd"
+kactivities_CONTENTS=
+libkactivities6_REQUIRES="kactivitymanagerd"
 libkactivities6_CONTENTS="
 	usr/bin/cygkactivities-6.dll
 	usr/lib/kde4/kcm_activities.dll
@@ -27,8 +24,6 @@ libkactivities6_CONTENTS="
 	usr/share/kde4/apps/activitymanager/
 	usr/share/kde4/services/kcm_activities.desktop
 "
-libkactivities_devel_CATEGORY="Libs"
-libkactivities_devel_SUMMARY="KDE 4 activity manager client library"
 libkactivities_devel_REQUIRES="libkdecore-devel"
 libkactivities_devel_CONTENTS="
 	usr/include/kde4/KDE/KActivities/
@@ -37,4 +32,3 @@ libkactivities_devel_CONTENTS="
 	usr/lib/libkactivities.dll.a
 	usr/lib/pkgconfig/libkactivities.pc
 "
-PKG_IGNORE="usr/share/ontology/kde/"
